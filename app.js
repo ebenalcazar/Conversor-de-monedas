@@ -1,15 +1,8 @@
-'use strict';
-
+"use strict";
 
 const inputCantidad = document.getElementById('cantidad');
 const tipoDeCambio = document.getElementById('tipoDeCambio');
 const resultado = document.getElementById('resultado');
-
-
-
-
-
-
 
 const calculoDeMoneda = () =>{
     switch (tipoDeCambio.value){
@@ -29,7 +22,16 @@ const calculoDeMoneda = () =>{
         resultado = "";
     }
     }
-    
+
+tipoDeCambio.addEventListener('input', calculoDeMoneda);
+inputCantidad.addEventListener('input', calculoDeMoneda);
+
+inputCantidad.addEventListener('input', () =>{
+    inputCantidad.style = "background-color: green; height: 6vh;"; 
+    tipoDeCambio.style.backgroundColor = "green";
+    resultado.style.backgroundColor = "green";
+});
+
 /*
 const calculoDeMoneda = () =>{
 if(tipoDeCambio.value === 'usd'){
@@ -45,5 +47,3 @@ if(tipoDeCambio.value === 'usd'){
 }
 };
 */
-tipoDeCambio.addEventListener('input', calculoDeMoneda);
-inputCantidad.addEventListener('input', calculoDeMoneda);
