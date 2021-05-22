@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+
     <h1>Conversor de Monedas</h1>
 
-    <label for="cantidad">Ingrese la cantidad a convertir</label>
-    <input type="number" name="cantidad" id="cantidad">
 
-    <label for="tipoDeCambio">Tipo de cambio</label>
-    <select name="tipoDeCambio" id="tipo-de-cambio">
-        <option value="Mxn">Peso Mexicano</option>
-        <option value="Usd">Dolar</option>
-        <option value="Col">Peso Colombiano</option>
-        <option value="Pen">Soles</option>
-    </select>
-    <div id="resultado"></div>
+     <label for="cantidad">Ingrese la cantidad a convertir:</label>
+     <input type="number" name="cantidad" id="cantidad">
 
+     <label for="tipoDeCambio">Tipo de Cambio</label>
 
-    <script src="app.js"></script>
+     <select name="tipoDeCambio" id="tipoDeCambio">
+
+         <option value="mxn">Peso Mexicano</option>
+         <option value="usd">Dolar</option>
+         <option value="col">Peso Colombiano</option>
+         <option value="pen">Soles</option>
+
+     </select>
+
+     <div id="resultado"></div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
